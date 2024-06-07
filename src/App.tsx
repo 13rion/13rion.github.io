@@ -1,7 +1,15 @@
+import Header from './components/header';
+import Sidebar from './components/sidebar';
+import Content from './components/content';
+
 function App() {
 	return (
 		<main>
-			<h1>Hello World</h1>
+			<Header />
+			<div className="flex">
+				<Sidebar />
+				<Content />
+			</div>
 		</main>
 	);
 }

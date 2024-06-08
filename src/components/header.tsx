@@ -23,7 +23,7 @@ export default function Header() {
 				<div className="menu__item">Skills</div>
 				<div className="menu__item">Work</div>
 				<div className="menu__item">Projects</div>
-				<div className="menu__item">Travel</div>
+				{/* <div className="menu__item">Travel</div> */}
 			</div>
 		</header>
 	);

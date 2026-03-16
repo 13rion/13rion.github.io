@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <section id="about" className="border-b-2 border-black pb-8 mb-8">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-5xl mb-4" style={{ fontFamily: 'serif' }}>
+        <h2 className="text-4xl mb-4" style={{ fontFamily: 'Libre Baskerville' }}>
           Visual Designer & Frontend Developer
         </h2>
         <div className="h-1 w-24 bg-black mx-auto mb-6"></div>

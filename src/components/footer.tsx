@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
           <div>
-            <h4 className="text-xl mb-3 uppercase tracking-wider" style={{ fontFamily: 'serif' }}>
+            <h4 className="text-lg mb-3 uppercase tracking-wider" style={{ fontFamily: 'Libre Baskerville' }}>
               Contact
             </h4>
             <p className="text-sm mb-2">Available for new work opportunities and collaborations</p>
@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
           
           <div className="md:ml-auto">
-            <h4 className="text-xl mb-3 uppercase tracking-wider" style={{ fontFamily: 'serif' }}>
+            <h4 className="text-lg mb-3 uppercase tracking-wider" style={{ fontFamily: 'Libre Baskerville' }}>
               Connect
             </h4>
             <div className="flex gap-4">

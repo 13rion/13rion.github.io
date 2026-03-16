@@ -1,6 +1,6 @@
 export default function Header() {
 	return (
-		<header className="header flex items-center justify-between border-b px-8 py-2">
+		<header className="header flex items-center justify-between border-b px-8 py-2 fixed w-full top-0 bg-white z-10">
 			<div className="logo flex items-center gap-4">
 				<div className="logo__image">
 					<svg
@@ -17,12 +17,13 @@ export default function Header() {
 						/>
 					</svg>
 				</div>
-				<div className="logo__title font-libre">Brion Baskerville</div>
 			</div>
+			<div className="logo__title font-libre text-xl">Brion Baskerville</div>
 			<div className="menu flex gap-4">
-				<div className="menu__item">Skills</div>
-				<div className="menu__item">Work</div>
-				<div className="menu__item">Projects</div>
+				<div className="menu__item active">Home</div>
+				<div className="menu__item">Resume</div>
+				<div className="menu__item">About</div>
+				{/* <div className="menu__item">Games</div> */}
 				{/* <div className="menu__item">Travel</div> */}
 			</div>
 		</header>

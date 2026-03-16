@@ -1,6 +1,6 @@
 import { Skills } from "../types/skills";
 
-export const skills: Skills = {
+export const skillsData: Skills = {
 	languages: [
 		'JavaScript',
 		'TypeScript',
@@ -16,25 +16,26 @@ export const skills: Skills = {
 		'jQuery',
 		'AngularJS',
 		'ReactJS',
-		'Gatsby',
-		'Node.js',
+		'NebulaJS',
 		'WordPress',
 		'Bootstrap',
 		'GraphQL'
 	],
 	tools: [
 		'Git',
-		'Gulp',
+		'Webpack',
+		'PostCSS',
 		'Docker',
 		'VSCode',
 		'Figma',
 		'AdobeXD',
 		'Adobe Illustrator',
-		'Qlik',
-		'Postman'
+		'Eclipse'
 	],
 	other: [
 		'Visual Design',
-		'UI/UX'
+		'UI/UX',
+		'Pendo',
+		'DELMIA Apriso'
 	]
 };

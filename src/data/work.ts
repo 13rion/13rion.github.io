@@ -9,15 +9,26 @@ export const workExperienceData: WorkExperience[] = [
 		city: "Burbank",
 		state: "CA",
 		tasks: [
-			"Developed and documented a style guide for EP Analytics to inform product owners, QA engineers, and developers how various HTML elements should style and behave using AdobeXD",
-			"Developed Qlik extensions to add and extend functionality, behavior, and to create a more tightly controlled end-user experience using AngularJS, jQuery, HTMl, and CSS",
-			"collaborated with multiple teams in the organization to assist with visual design and UI/UX",
-			"Created mockups, illustrations, and interactive prototypes in AdobeXD and Adobe Illustrator to solve UX challenges",
+			"Designed, and documented a style guide for Entertainment Partners’(EP) Analytics team to inform product owners, QA engineers, and developers how various HTML components should behave, look, and feel using AdobeXD",
+			"Developed Qlik extensions/components as part of EPs’ Analytics team to extend Qlik functionality, behavior, and to create a more tightly controlled end-user experience using AngularJS, JavaScript, NebulaJS, TypeScript, and HTML/CSS",
+			"Collaborated with multiple teams across the organization to create mockups and interactive prototypes, using AdobeXD and Figma, to help solve UI/UX challenges",
+			"Helped develop and revamped the UI/UX of EP’s Movie Magic Budgeting product using ReactJS, TypeScript, and CSS",
+			"Set EPs’ standard for icons and created icons in alignment with that standard using Adobe Illustrator",
+			"Utilized GraphQL and Pendo to service our FAQs into Pendo’s Resource Center",
 		],
+		tags: [
+			'JavaScript',
+			'TypeScript',
+			'HTML',
+			'CSS',
+			'AngularJS',
+			'ReactJS',
+			'jQuery',
+		]
 	},
 	{
 		company: "Dassault Systemes",
-		title: "Staff Front End UI Developer/Designer",
+		title: "Solution Consultant",
 		startDate: "January 2018",
 		endDate: "March 2022",
 		city: "Long Beach",
@@ -29,11 +40,16 @@ export const workExperienceData: WorkExperience[] = [
 			"Worked on a large-scale project for Boeing, collaborating with multiple teams in an SAFe Agile environment",
 			"Developed and documented a common developer library of web components using HTML, CSS, JavaScript/ES6, C#, and SQL to help create a more cohesive user interface and experience across several teams working on the same product",
 		],
+		tags: [
+			'JavaScript',
+			'HTML',
+			'CSS',
+			'SQL',
+		]
 	},
 	{
-		company:
-			"California State Polytechnic University, Pomona / Admissions & Enrollment Planning",
-		title: "Staff Front End UI Developer/Designer",
+		company: "California State Polytechnic University, Pomona",
+		title: "Lead Software Developer",
 		startDate: "August 2017",
 		endDate: "April 2018",
 		city: "Pomona",
@@ -43,5 +59,11 @@ export const workExperienceData: WorkExperience[] = [
 			"Created a form and survey system that managed receiving responses from approximately 20,000 students",
 			"Redeveloped the Admissions section of the Cal Poly Pomona website, adding features such as a student eligibility calculator using JavaScript",
 		],
+		tags: [
+			'JavaScript',
+			'TypeScript',
+			'HTML',
+			'CSS',
+		]
 	},
 ];

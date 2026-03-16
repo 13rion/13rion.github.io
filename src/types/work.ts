@@ -6,4 +6,5 @@ export interface WorkExperience {
 	city: string;
 	state: string;
 	tasks: string[];
+	tags: string[];
 }

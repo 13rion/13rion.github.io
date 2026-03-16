@@ -1,6 +1,6 @@
 import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="border-t-4 border-black bg-[#f5f1e8] mt-12">
       <div className="max-w-7xl mx-auto px-4 py-8">

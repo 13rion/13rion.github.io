@@ -9,7 +9,7 @@ export default function Header() {
 	});
 
 	return (
-		<header className="border-b-4 border-black bg-[#f5f1e8]">
+		<header className="border-b-4 border-black">
 			<div className="max-w-7xl mx-auto px-4 py-6">
 				<div className="flex items-center justify-between mb-4">
 					<div className="flex items-center gap-2">

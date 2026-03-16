@@ -1,16 +1,14 @@
 import Header from './components/header';
-import Sidebar from './components/sidebar';
-import Content from './components/content';
+import HeroSection from './components/heroSection';
 import Footer from './components/footer';
 
 function App() {
 	return (
 		<main>
 			<Header />
-			<div className="flex">
-				<Sidebar />
-				<Content />
-			</div>
+			<main className="max-w-7xl mx-auto px-4 py-8">
+				<HeroSection />
+			</main>
 			<Footer />
 		</main>
 	);

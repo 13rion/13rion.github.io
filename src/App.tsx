@@ -1,6 +1,7 @@
 import Header from './components/header';
 import Sidebar from './components/sidebar';
 import Content from './components/content';
+import { Footer } from './components/footer';
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 				<Sidebar />
 				<Content />
 			</div>
+			<Footer />
 		</main>
 	);
 }

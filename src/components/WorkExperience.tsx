@@ -42,7 +42,7 @@ const experiences = [
   }
 ];
 
-export function WorkExperience() {
+export default function WorkExperience() {
   return (
     <section id="experience" className="mb-12">
       <div className="flex items-center justify-between mb-6 pb-2 border-b-2 border-black">

@@ -1,8 +1,8 @@
-import Header from './components/header';
-import HeroSection from './components/heroSection';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
 import ProjectsGrid from './components/ProjectsGrid';
 import WorkExperience from './components/WorkExperience';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 function App() {
 	return (

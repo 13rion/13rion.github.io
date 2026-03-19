@@ -1,4 +1,4 @@
-import { Newspaper } from 'lucide-react';
+// import { Newspaper } from 'lucide-react';
 
 export default function Header() {
 	const today = new Date().toLocaleDateString('en-US', {
@@ -13,10 +13,7 @@ export default function Header() {
 			<div className="max-w-7xl mx-auto px-4 py-6">
 				<div className="flex items-center justify-between mb-4">
 					<div className="flex items-center gap-2">
-						<Newspaper className="w-6 h-6" />
-						<span className="text-sm">{today}</span>
-					</div>
-					<div className="text-sm">
+						{/* <Newspaper className="w-6 h-6" /> */}
 						<div className="logo flex items-center gap-4">
 							<div className="logo__image">
 								<svg
@@ -34,6 +31,9 @@ export default function Header() {
 								</svg>
 							</div>
 						</div>
+						<span className="text-sm">{today}</span>
+					</div>
+					<div className="text-sm">
 					</div>
 					<div className="text-sm">Portfolio Edition</div>
 				</div>

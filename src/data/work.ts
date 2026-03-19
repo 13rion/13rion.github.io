@@ -1,20 +1,31 @@
-import { WorkExperience } from "../types/work";
+export interface WorkExperience {
+	id: number;
+	company: string;
+	description: string;
+	title: string;
+	period: string;
+	city: string;
+	state: string;
+	responsibilities: string[];
+	tags: string[];
+}
 
-export const workExperienceData: WorkExperience[] = [
+export const experiences: WorkExperience[] = [
 	{
+		id: 1,
 		company: "Entertainment Partners",
+		description: "Software & Payroll company providing production finance solutions for the entertainment industry",
 		title: "Staff Front End UI Developer/Designer",
-		startDate: "April 2022",
-		endDate: "Present",
+		period: "April 2022 – Present",
 		city: "Burbank",
 		state: "CA",
-		tasks: [
-			"Designed, and documented a style guide for Entertainment Partners’(EP) Analytics team to inform product owners, QA engineers, and developers how various HTML components should behave, look, and feel using AdobeXD",
-			"Developed Qlik extensions/components as part of EPs’ Analytics team to extend Qlik functionality, behavior, and to create a more tightly controlled end-user experience using AngularJS, JavaScript, NebulaJS, TypeScript, and HTML/CSS",
-			"Collaborated with multiple teams across the organization to create mockups and interactive prototypes, using AdobeXD and Figma, to help solve UI/UX challenges",
-			"Helped develop and revamped the UI/UX of EP’s Movie Magic Budgeting product using ReactJS, TypeScript, and CSS",
-			"Set EPs’ standard for icons and created icons in alignment with that standard using Adobe Illustrator",
-			"Utilized GraphQL and Pendo to service our FAQs into Pendo’s Resource Center",
+		responsibilities: [
+			"Contributed to an industry leading movie budgeting software to help accountants track the budgets of certain movies, leading to a user survey satisfaction score increase by +20%",
+			"Designed a comprehensive style guide and built reusable components establishing a cohesive product branding and visual standards for the Qlik platform enhancing functionality, behavior, and end-user experience",
+			"Collaborated with cross-functional teams across the organization in a Agile environment to create interactive prototypes, effectively addressing any UI/UX challenges for respective products resulting in a better user experience",
+			"Established icon standards and created custom iconography in alignment with brand guidelines",
+			"Designed the visual interface and user experience for an AI Chatbot, ensuring an engaging and intuitive design aligned with brand and industry standards",
+			"Revamped Entertainment Partners’ SmartStart product using a mobile-first approach, improving usability for a majority of users accessing via mobile devices",
 		],
 		tags: [
 			'JavaScript',
@@ -27,18 +38,19 @@ export const workExperienceData: WorkExperience[] = [
 		]
 	},
 	{
+		id: 2,
 		company: "Dassault Systemes",
+		description: "Software company providing manufacturing solutions, 3D CAD software, and consulting services",
 		title: "Solution Consultant",
-		startDate: "January 2018",
-		endDate: "March 2022",
+		period: "January 2018 – March 2022",
 		city: "Long Beach",
 		state: "CA",
-		tasks: [
-			"Utilized Web Socket API, JavaScript, and SQL to update web pages with realtime data, allowing managers and stakeholders to view machine data and performance metrics/KPIs",
+		responsibilities: [
+			"Contributed to a billion-dollar project for Boeing, collaborating with cross-functional teams in a SAFe Agile environment to deliver a modern manufacturing execution system",
 			"Created learning resources and materials about DELMIA Apriso for Amazon, as well as, led learning sessions for their employees",
 			"Group-Leader for internal UI/UX team tasked with building out UI/UX standards and code for an project used widely by clients with the company software",
-			"Worked on a large-scale project for Boeing, collaborating with multiple teams in an SAFe Agile environment",
-			"Developed and documented a common developer library of web components using HTML, CSS, JavaScript/ES6, C#, and SQL to help create a more cohesive user interface and experience across several teams working on the same product",
+			"Led and developed a standardized library of reusable components, ensuring a cohesive end-user experience across multiple teams, contributing to savings of approximately $1.5M",
+			"Implemented real-time data dashboards enabling managers to monitor machine performance metrics and KPIs",
 		],
 		tags: [
 			'JavaScript',
@@ -48,13 +60,16 @@ export const workExperienceData: WorkExperience[] = [
 		]
 	},
 	{
+		id: 3,
 		company: "California State Polytechnic University, Pomona",
+		description: "Department in charge of admitting, enrolling, and outreaching to prospective students",
 		title: "Lead Software Developer",
-		startDate: "August 2017",
-		endDate: "April 2018",
+		period: "August 2017 – April 2018",
 		city: "Pomona",
 		state: "CA",
-		tasks: [
+		responsibilities: [
+			"Built an events system that tracked numerous university outreach events conducted during the year, providing counselors with precise event map data and a visual view of events",
+			"Created a university campus tour system that allowed prospective students and parents to scheduling tours online while also providing the collection of data analytics",
 			"Developed a logistics system for the Campus Test Center to automate managing proctor schedules, and timesheets",
 			"Created a form and survey system that managed receiving responses from approximately 20,000 students",
 			"Redeveloped the Admissions section of the Cal Poly Pomona website, adding features such as a student eligibility calculator using JavaScript",

@@ -1,4 +1,9 @@
-import { Skills } from "../types/skills";
+export interface Skills {
+	languages: string[];
+	frameworks: string[];
+	tools: string[];
+	other: string[];
+}
 
 export const skillsData: Skills = {
 	languages: [

@@ -1,14 +1,5 @@
 import { Share2 } from "lucide-react";
-
-interface Project {
-  id: number;
-  title: string;
-  category: string;
-  date: string;
-  description: string;
-  tags: string[];
-  featured: boolean;
-}
+import { Project } from '../data/projects';
 
 interface ProjectCardProps {
   project: Project;

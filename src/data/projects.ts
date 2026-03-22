@@ -12,6 +12,7 @@ export interface Project {
 	role: string;
 	problem: string;
 	solution: string;
+	gallery?: string[];
 }
 
 export const projects: Project[] = [
@@ -47,12 +48,28 @@ export const projects: Project[] = [
 	},
 	{
 		id: 3,
+		title: `Incentive Realization (AI)`,
+		category: `Product Design`,
+		date: ``,
+		description: ``,
+		tags: [],
+		featured: true,
+		imageUrl: `Entertainment Partners`,
+		company: `Entertainment Partners (EP)`,
+		year: 2025,
+		role: `Visual Designer, Front End UI Engineer`,
+		problem: `Productions are heavily incentivized based on locations. The issue is they don’t exactly know how much in incentives they’ll receive, in addition to there being information they need to aggregate and forms they need to fill out about the production. Further, they also have a time limit on when they can submit all of this information.`,
+		solution: `Create a new platform for users to view what their projected incentives are for a project as well as what they would be if they were to shoot in other locations. We also have all of their data from payroll so we can use that to help them fill out all of the information they need and have them input the missing data into our system, feeding our data lake, but also making it a much simpler process for them in the end when it comes time to submit their documentation.
+		The goal was to have it be built as its own solution and preliminary designs of those are available below. To go to market faster, it was determined to use the EP Analytics platform which uses a mix of react and Qlik. This required providing a completely different design. On that platform we had a slew of Qlik extensions, custom built extensions I made, and custom extensions I recommended through research. Combining all of these extensions we were able to go to market faster and create a viable MVP for go to market.`,
+	},
+	{
+		id: 4,
 		title: `EP Analytics Style Guide`,
 		category: `Product Design`,
 		date: ``,
 		description: `Company: Entertainment Partners Year: 2024 Role: Front End UI Engineer. The Problem: `,
 		tags: [],
-		featured: false,
+		featured: true,
 		imageUrl: ``,
 		company: `Entertainment Partners (EP)`,
 		year: 2024,
@@ -61,7 +78,7 @@ export const projects: Project[] = [
 		solution: ``,
 	},
 	{
-		id: 4,
+		id: 5,
 		title: `SmartStart Redesign`,
 		category: `Product Design`,
 		date: ``,
@@ -76,7 +93,7 @@ export const projects: Project[] = [
 		solution: ``,
 	},
 	{
-		id: 5,
+		id: 6,
 		title: `EPA Landing Page`,
 		category: ``,
 		date: ``,
@@ -89,22 +106,6 @@ export const projects: Project[] = [
 		role: ``,
 		problem: ``,
 		solution: ``,
-	},
-	{
-		id: 6,
-		title: `Incentive Realization (AI)`,
-		category: `Product Design`,
-		date: ``,
-		description: ``,
-		tags: [],
-		featured: true,
-		imageUrl: `Entertainment Partners`,
-		company: `Entertainment Partners (EP)`,
-		year: 2025,
-		role: `Visual Designer, Front End UI Engineer`,
-		problem: `Productions are heavily incentivized based on locations. The issue is they don’t exactly know how much in incentives they’ll receive, in addition to there being information they need to aggregate and forms they need to fill out about the production. Further, they also have a time limit on when they can submit all of this information.`,
-		solution: `Create a new platform for users to view what their projected incentives are for a project as well as what they would be if they were to shoot in other locations. We also have all of their data from payroll so we can use that to help them fill out all of the information they need and have them input the missing data into our system, feeding our data lake, but also making it a much simpler process for them in the end when it comes time to submit their documentation.
-		The goal was to have it be built as its own solution and preliminary designs of those are available below. To go to market faster, it was determined to use the EP Analytics platform which uses a mix of react and Qlik. This required providing a completely different design. On that platform we had a slew of Qlik extensions, custom built extensions I made, and custom extensions I recommended through research. Combining all of these extensions we were able to go to market faster and create a viable MVP for go to market.`,
 	},
 	{
 		id: 7,

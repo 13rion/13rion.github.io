@@ -2,7 +2,7 @@ import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t-4 border-black mt-12">
+    <footer id="contact" className="border-t-4 border-black mt-12">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
           <div>
@@ -21,13 +21,13 @@ export default function Footer() {
               Connect
             </h4>
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/in/brion-baskerville/" className="hover:opacity-70">
+              <a href="https://www.linkedin.com/in/brion-baskerville/" className="hover:opacity-70" target="_blank">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://github.com/13rion" className="hover:opacity-70">
+              <a href="https://github.com/13rion" className="hover:opacity-70" target="_blank">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com/13rion_" className="hover:opacity-70">
+              <a href="https://twitter.com/13rion_" className="hover:opacity-70" target="_blank">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>

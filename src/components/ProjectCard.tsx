@@ -1,4 +1,4 @@
-import { Share2 } from 'lucide-react';
+import { Link as LinkIcon } from 'lucide-react';
 import { Link } from 'react-router';
 import { Project } from '../data/projects';
 
@@ -8,20 +8,38 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, featured }: ProjectCardProps) {
+	const handleCopyLink = (e: React.MouseEvent) => {
+		e.preventDefault();
+		e.stopPropagation();
+		const url = `${window.location.origin}/project/${project.id}`;
+		navigator.clipboard.writeText(url);
+		// .then(() => {
+		//   toast.success('Link copied to clipboard!');
+		// });
+	};
+
 	if (featured) {
 		return (
 			<article className="bg-transparent pb-6">
 				<div className="flex items-start justify-between mb-3">
-					<span className="text-xs uppercase tracking-wider bg-black text-white px-2 py-1">
+					<span className="text-xs uppercase tracking-wider bg-[#F14138] text-white px-2 py-1">
 						{project.category}
 					</span>
-					<button className="hover:opacity-70">
-						<Share2 className="w-4 h-4" />
+					<button
+						onClick={handleCopyLink}
+						className="hover:opacity-70 transition-opacity"
+						aria-label="Copy permalink"
+						title="Copy link to project"
+					>
+						<LinkIcon className="w-4 h-4" />
 					</button>
 				</div>
 
 				<Link to={`/project/${project.id}`} className="block group">
-					<h3 className="text-3xl mb-3 leading-tight group-hover:underline cursor-pointer" style={{ fontFamily: 'serif' }}>
+					<h3
+						className="text-3xl mb-3 leading-tight group-hover:underline cursor-pointer"
+						style={{ fontFamily: 'serif' }}
+					>
 						{project.title}
 					</h3>
 				</Link>
@@ -54,16 +72,24 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
 	return (
 		<article className="bg-transparent pb-4">
 			<div className="flex items-start justify-between mb-2">
-				<span className="text-xs uppercase tracking-wider text-gray-600">
+				<span className="text-xs uppercase tracking-wider text-[#F14138]">
 					{project.category}
 				</span>
-				<button className="hover:opacity-70">
-					<Share2 className="w-3 h-3" />
+				<button
+					onClick={handleCopyLink}
+					className="hover:opacity-70 transition-opacity"
+					aria-label="Copy permalink"
+					title="Copy link to project"
+				>
+					<LinkIcon className="w-4 h-4" />
 				</button>
 			</div>
 
 			<Link to={`/project/${project.id}`} className="block group">
-				<h3 className="text-xl mb-2 leading-tight group-hover:underline cursor-pointer" style={{ fontFamily: 'serif' }}>
+				<h3
+					className="text-xl mb-2 leading-tight group-hover:underline cursor-pointer"
+					style={{ fontFamily: 'serif' }}
+				>
 					{project.title}
 				</h3>
 			</Link>

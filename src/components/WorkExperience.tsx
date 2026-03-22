@@ -1,4 +1,4 @@
-import { Briefcase, Download } from 'lucide-react';
+import { Briefcase, ExternalLink } from 'lucide-react';
 import { experiences } from '../data/work.ts';
 
 export default function WorkExperience() {
@@ -20,8 +20,8 @@ export default function WorkExperience() {
 					target="_blank"
 					download
 				>
-					<Download className="w-4 h-4" />
 					Download Resume
+					<ExternalLink className="w-3.5 h-3.5" />
 				</a>
 			</div>
 
@@ -35,6 +35,7 @@ export default function WorkExperience() {
 							>
 								{exp.title}
 							</h3>
+						<div className="h-1 w-24 bg-[#F14138] mx-auto md:mx-0 mb-6"></div>
 							<div className="flex items-center justify-between text-sm italic">
 								<span>{exp.period}</span>
 								<span>

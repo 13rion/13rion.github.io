@@ -19,7 +19,7 @@ export default function ProjectModal() {
 
   const handleClose = () => {
     // Navigate back to home with the projects hash
-    navigate('/#projects');
+    navigate('/');
   };
 
   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {

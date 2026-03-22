@@ -1,6 +1,5 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "../data/projects";
-// import { ExternalLink } from "lucide-react";
 
 // const projects = [
 //   {

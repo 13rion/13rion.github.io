@@ -45,7 +45,7 @@ export default function HeroSection() {
 							</div>
 						</div>
 						<p
-							className="text-xl leading-relaxed"
+							className="text-xl leading-relaxed text-left"
 							style={{ fontFamily: 'Source Sans' }}
 						>
 							Crafting pixel-perfect interfaces and bringing

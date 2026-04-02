@@ -8,7 +8,7 @@ export default function WorkExperience() {
 				<div className="flex items-center gap-3">
 					<Briefcase className="w-6 h-6" />
 					<h2
-						className="text-3xl uppercase tracking-wider"
+						className="text-2xl md:text-3xl uppercase tracking-wider"
 						style={{ fontFamily: 'Libre Baskerville' }}
 					>
 						Work Experience
@@ -30,12 +30,12 @@ export default function WorkExperience() {
 					<article key={exp.id}>
 						<div className="mb-4">
 							<h3
-								className="text-2xl mb-2"
+								className="text-xl md:text-2xl mb-2"
 								style={{ fontFamily: 'serif' }}
 							>
 								{exp.title}
 							</h3>
-						<div className="h-1 w-24 bg-[#F14138] mx-auto md:mx-0 mb-6"></div>
+						<div className="h-1 w-24 bg-[#F14138] md:mx-0 mb-6"></div>
 							<div className="flex items-center justify-between text-sm italic">
 								<span>{exp.period}</span>
 								<span>

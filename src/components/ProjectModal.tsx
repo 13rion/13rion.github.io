@@ -16,12 +16,18 @@ export default function ProjectModal() {
 	const navigate = useNavigate();
 	const project = projects.find((p) => p.id === Number(projectId));
 	const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+	const [isOpen, setIsOpen] = useState(false);
 
 	useEffect(() => {
 		// Prevent body scroll when modal is open
 		document.body.style.overflow = 'hidden';
+
+		// Trigger animation after a brief delay
+		const timer = setTimeout(() => setIsOpen(true), 10);
+
 		return () => {
 			document.body.style.overflow = 'unset';
+			clearTimeout(timer);
 		};
 	}, []);
 
@@ -46,7 +52,13 @@ export default function ProjectModal() {
 			className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 md:p-8"
 			onClick={handleOverlayClick}
 		>
-			<div className="bg-[#f5f1e8] w-full h-full overflow-y-auto rounded-lg shadow-2xl relative">
+			<div
+				className={`bg-[#f5f1e8] w-full h-full overflow-y-auto rounded-lg shadow-2xl relative transition-all duration-300 ease-out ${
+					isOpen
+						? 'scale-100 opacity-100 animate-bounce-in'
+						: 'scale-95 opacity-0'
+				}`}
+			>
 				{/* Close button */}
 				<button
 					onClick={handleClose}

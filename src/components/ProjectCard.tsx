@@ -1,6 +1,7 @@
 import { Link as LinkIcon } from 'lucide-react';
 import { Link } from 'react-router';
 import { Project } from '../data/projects';
+import { ImageWithFallback } from './supporting/ImageWithFallback';
 
 interface ProjectCardProps {
 	project: Project;
@@ -21,6 +22,20 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
 	if (featured) {
 		return (
 			<article className="bg-transparent pb-6">
+				{/* Project Image */}
+				{project.imageUrl && (
+					<Link
+						to={`/project/${project.id}`}
+						className="block mb-4 overflow-hidden"
+					>
+						<ImageWithFallback
+							src={project.imageUrl}
+							alt={project.title}
+							className="w-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer rounded-lg"
+						/>
+					</Link>
+				)}
+
 				<div className="flex items-start justify-between mb-3">
 					<span className="text-xs uppercase tracking-wider bg-[#F14138] text-white px-2 py-1">
 						{project.category}
@@ -37,7 +52,7 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
 
 				<Link to={`/project/${project.id}`} className="block group">
 					<h3
-						className="text-3xl mb-3 leading-tight group-hover:underline cursor-pointer"
+						className="text-2xl md:text-3xl mb-3 leading-tight group-hover:underline cursor-pointer"
 						style={{ fontFamily: 'serif' }}
 					>
 						{project.title}
@@ -71,6 +86,20 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
 
 	return (
 		<article className="bg-transparent pb-4">
+			{/* Project Image */}
+			{project.imageUrl && (
+				<Link
+					to={`/project/${project.id}`}
+					className="block mb-3 overflow-hidden"
+				>
+					<ImageWithFallback
+						src={project.imageUrl}
+						alt={project.title}
+						className="w-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer rounded-lg"
+					/>
+				</Link>
+			)}
+
 			<div className="flex items-start justify-between mb-2">
 				<span className="text-xs uppercase tracking-wider text-[#F14138]">
 					{project.category}
